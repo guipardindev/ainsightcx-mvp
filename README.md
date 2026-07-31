@@ -168,5 +168,3 @@ UniFECAF — 2026
 [![GitHub](https://img.shields.io/badge/GitHub-guipardindev-181717?style=flat&logo=github)](https://github.com/guipardindev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-eusouguipardin-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/eusouguipardin)
 [![YouTube](https://img.shields.io/badge/YouTube-guipardindev-FF0000?style=flat&logo=youtube)](https://youtube.com/@guipardindev)
-# ainsightcx-mvp
-# ainsightcx-mvp
