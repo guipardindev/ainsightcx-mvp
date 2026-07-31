@@ -1,245 +1,172 @@
-<div align="center">
+# AinsightCX — Do Problema ao Produto com IA, MVP e Roadmap
 
-# 🧠 AInsightCX
+[![Banner AinsightCX](https://img.youtube.com/vi/[ID_DO_VIDEO]/maxresdefault.jpg)](https://youtu.be/[ID_DO_VIDEO])
 
-### Transforme milhares de interações de atendimento em insights priorizados e planos de ação executivos em minutos — não em semanas.
+## 📌 Descrição do Projeto
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Groq](https://img.shields.io/badge/Groq-llama--3.3--70b-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com)
-[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+Este projeto foi desenvolvido para a disciplina **Fundamentos de Gestão de Projetos** — UniFECAF.
+O objetivo foi **planejar estrategicamente um produto digital baseado em IA Generativa**, aplicando na prática os fundamentos de gestão de produtos e projetos: visão de produto, definição de MVP, roadmap evolutivo, ciclo de vida da aplicação e gerenciamento de riscos.
 
-**[🚀 Ver MVP no ar](https://ainsightcx-mvp.vercel.app)** · **[📹 Vídeo pitch](https://www.youtube.com/watch?v=[VIDEO_ID])** · **[📄 Documento de MVP](https://ainsightcx.notion.site/AInsightCX-Documento-de-MVP-3ad5551d52218044a6aff971395115af)** · **[🎨 Artefatos no Miro](https://miro.com/app/board/uXjVH2CNn1E=/?share_link_id=226858806009)**
+**O AinsightCX** é uma plataforma SaaS que utiliza IA Generativa para transformar volumes massivos de interações de atendimento ao cliente (tickets, chats e e-mails) em **insights priorizados** e **planos de ação executivos** — em minutos, não semanas.
 
-<a href="https://www.youtube.com/watch?v=[VIDEO_ID]">
-  <img src="https://img.youtube.com/vi/[VIDEO_ID]/maxresdefault.jpg" alt="Vídeo pitch do AInsightCX" width="720">
-</a>
+> ⚠ Este não é um sistema implementado em código. É um **planejamento estratégico completo** de produto, entregue como um Product/Project Manager real entregaria a um startup studio incubando o produto.
 
-</div>
+## 🎯 Problema
 
----
+Times de atendimento em empresas SaaS B2B enfrentam um paradoxo: quanto mais crescem em base de clientes, mais interações acumulam — e menos capacidade têm de extrair aprendizado estratégico desse volume.
 
-## 📌 O que é
+- **Volume incompatível com análise manual** — gerentes recebem milhares de mensagens semanais
+- **Ausência de priorização automática** — temas críticos ficam misturados a solicitações triviais
+- **Decisões reativas, não preditivas** — problemas só são percebidos após escalarem
+- **Desconexão entre suporte e produto/engenharia** — insights valiosos ficam retidos no atendimento
 
-O **AInsightCX** é uma plataforma SaaS que usa IA generativa para ler o volume bruto de interações de atendimento — tickets, chats e e-mails — e devolver **temas priorizados, resumos executivos e planos de ação**.
+## 💡 Solução
 
-O problema não é coletar a voz do cliente. É que ela nunca chega, organizada e a tempo, a quem toma decisão.
+Foi planejada uma plataforma SaaS com IA Generativa que:
 
-| | |
-|---|---|
-| 🎯 **Público-alvo** | Empresas SaaS B2B de médio porte (100–500 funcionários) com mais de 5.000 interações/mês |
-| 👥 **Personas** | Head de Customer Experience · Head de Operações · Gerente de Suporte |
-| 💡 **Proposta de valor** | Transformar milhares de interações em insights priorizados e planos de ação em minutos, não semanas |
-| 🧩 **Escopo do MVP** | Funcionalidades F1 a F5 — da ingestão do CSV ao plano de ação sugerido |
+**Fluxo:** Upload CSV → Classificação por IA → Sumarização Executiva → Plano de Ação → Dashboard Priorizado
 
-### Funcionalidades
+O produto:
 
-| | Funcionalidade | O que faz |
-|---|---|---|
-| **F1** | Ingestão de interações | Upload de CSV com validação de estrutura e pré-visualização |
-| **F2** | Classificação temática por IA | Agrupa as mensagens em temas de negócio, sem taxonomia manual |
-| **F3** | Priorização por criticidade | Classifica cada tema em urgência baixa, média, alta ou crítica |
-| **F4** | Resumo executivo automático | 2–3 frases por tema, escritas para quem decide |
-| **F5** | Plano de ação sugerido | 3 a 5 ações priorizadas, com prazo e área responsável |
+- **Ingere** dados de atendimento via upload de CSV (sem necessidade de integração no MVP)
+- **Classifica** automaticamente cada interação por tema e urgência com IA Generativa
+- **Sumariza** temas críticos com resumos executivos e evolução temporal
+- **Sugere** planos de ação práticos priorizados por impacto
+- **Prioriza** insights em um dashboard web com filtros e exportação
 
----
+## 🎓 Contexto Acadêmico
 
-## 🎓 Contexto acadêmico
+**Público-alvo do produto:** empresas SaaS B2B de médio porte (100–500 funcionários), com volume mensal superior a 5.000 interações de atendimento.
 
-Este MVP é o **trabalho bônus** da disciplina **Fundamentos de Gestão de Projetos** da **UniFECAF**.
+**Personas:** Head de Customer Experience, Head de Operações (COO), Gerente de Suporte.
 
-Ele complementa a entrega teórica (Lean Canvas, roadmap em três fases, matriz de riscos e documento de MVP), transformando o planejamento em uma aplicação **real, funcional e no ar** — com chamadas de verdade a um modelo de linguagem, sem mocks.
+**Proposta de Valor:** _"Transforme milhares de interações de atendimento em insights priorizados e planos de ação executivos em minutos, não semanas — com IA generativa."_
 
----
+## 🧠 Stack de IA em 3 Fases
 
-## 🖼️ Screenshots
+| Fase                       | Stack                     | Custo                 | Justificativa                  |
+| -------------------------- | ------------------------- | --------------------- | ------------------------------ |
+| **MVP (Fase 1)**           | Groq API + Llama 3.3 70B  | Gratuito              | Validação sem risco financeiro |
+| **Escala (Fase 2)**        | Claude Sonnet ou GPT-4o   | ~US$ 3–15 / 1M tokens | Qualidade superior + SLA       |
+| **Diferenciação (Fase 3)** | Fine-tuning próprio + RAG | Variável              | Diferencial competitivo        |
 
-| Landing page | Upload de interações |
-|---|---|
-| _[adicionar screenshot]_ | _[adicionar screenshot]_ |
+## 📦 Artefatos do Projeto
 
-| Dashboard de insights | Plano de ação gerado por IA |
-|---|---|
-| _[adicionar screenshot]_ | _[adicionar screenshot]_ |
+Este projeto contém **6 artefatos obrigatórios** entregues em conformidade com o desafio da disciplina:
 
----
+| Artefato                                             | Formato | Local                                                                            |
+| ---------------------------------------------------- | ------- | -------------------------------------------------------------------------------- |
+| 📘 **Parte Teórica** (19 páginas)                    | PDF     | [Parte_Teorica_AinsightCX.pdf](./Parte_Teorica_AinsightCX.pdf)                   |
+| 🎨 **Canvas de Visão de Produto** (Lean Canvas)      | Miro    | [Board público](📎[PLACEHOLDER_LINK_MIRO])                                       |
+| 📋 **Documento de MVP**                              | Notion  | [Página pública](📎[PLACEHOLDER_LINK_NOTION])                                    |
+| 🗺 **Roadmap Visual** (3 fases)                      | Miro    | [Mesmo board do Canvas](📎[PLACEHOLDER_LINK_MIRO])                               |
+| ⚠ **Matriz de Riscos** (8 riscos)                    | Miro    | [Mesmo board do Canvas](📎[PLACEHOLDER_LINK_MIRO])                               |
+| 📑 **Kit Consolidado** (todos os artefatos em 1 PDF) | PDF     | [Kit_Artefatos_Praticos_AinsightCX.pdf](./Kit_Artefatos_Praticos_AinsightCX.pdf) |
 
-## 🛠️ Stack tecnológica
+## 📖 Lógica do Planejamento
 
-| Camada | Tecnologia | Por quê |
-|---|---|---|
-| Framework | **Next.js 16** (App Router) | Route Handlers mantêm a chave da IA fora do browser |
-| Linguagem | **TypeScript** | Contratos tipados entre client, API e resposta da IA |
-| Estilização | **Tailwind CSS v4** | Tema da marca em CSS variables, com dark mode |
-| Componentes | **shadcn/ui** | Base acessível e sem lock-in de biblioteca |
-| Ícones | **lucide-react** | Conjunto consistente e leve |
-| Tipografia | **Inter** (Google Fonts) | Legibilidade em interfaces densas |
-| IA | **Groq** · `llama-3.3-70b-versatile` | Inferência rápida o suficiente para uso interativo |
-| Parsing CSV | **papaparse** | Lida com aspas, quebras de linha e cabeçalhos sujos |
-| Tema | **next-themes** | Dark mode sem flash na hidratação |
-| Deploy | **Vercel** | Deploy contínuo direto do GitHub |
+O trabalho foi estruturado seguindo o fluxo real que um Product Manager segue ao planejar um produto do zero:
 
-> Sem banco de dados, sem autenticação, sem ORM e sem gerenciador de estado global: o MVP é **stateless e roda em memória** durante a sessão.
+1. **Descoberta do problema** — entender a dor concreta do cliente (volumes massivos ingeríveis)
+2. **Definição da visão de produto** — quem é o cliente, qual a proposta de valor, quais os canais
+3. **Escopo mínimo viável (MVP)** — priorização MoSCoW para validar a hipótese central
+4. **Roadmap evolutivo** — 3 fases com critérios objetivos de avanço
+5. **Ciclo de vida** — descoberta → validação → entrega → evolução
+6. **Gerenciamento de riscos** — matriz probabilidade × impacto com planos de mitigação
+7. **Gestão específica de IA** — alucinações, custos, LGPD, viés algorítmico
 
----
+### Como interpretar cada artefato:
 
-## 🚀 Como rodar localmente
+- **Lean Canvas** → visão executiva de UMA página do modelo de negócio
+- **Documento de MVP** → detalhe técnico das funcionalidades priorizadas com critérios de aceitação
+- **Roadmap** → evolução temporal em 3 fases (MVP → Escala → Diferenciação)
+- **Matriz de Riscos** → 8 riscos avaliados por exposição, com plano de mitigação e responsável
+- **Parte Teórica** → embasamento conceitual e aplicação dos frameworks de gestão
 
-**Pré-requisitos:** Node.js 20+ e uma chave da API da Groq ([criar gratuitamente](https://console.groq.com/keys)).
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/guipardindev/ainsightcx-mvp.git
-cd ainsightcx-mvp
-
-# 2. Instale as dependências
-npm install
-
-# 3. Configure as variáveis de ambiente
-cp .env.example .env.local
-# edite .env.local e cole sua GROQ_API_KEY
-
-# 4. Suba o servidor de desenvolvimento
-npm run dev
-```
-
-Acesse **http://localhost:3000**, vá em **Testar grátis** e clique em **Usar dados de exemplo** para ver o fluxo completo sem precisar de arquivo próprio.
-
-### Variáveis de ambiente
-
-| Variável | Obrigatória | Descrição |
-|---|---|---|
-| `GROQ_API_KEY` | ✅ Sim | Chave da API da Groq. Usada **apenas no servidor**, nos Route Handlers. |
-| `NEXT_PUBLIC_SITE_URL` | ⬜ Não | URL pública do deploy, usada nas metatags Open Graph. Detectada automaticamente na Vercel. |
-
-> ⚠️ O arquivo `.env.local` está no `.gitignore` e **nunca** deve ser commitado.
-
-### Formato do CSV
-
-| Coluna | Obrigatória | Exemplo |
-|---|---|---|
-| `data` | ✅ | `2026-07-02` ou `02/07/2026` |
-| `canal` | ✅ | `email`, `chat`, `ticket` |
-| `mensagem` | ✅ | `A fatura veio com cobrança em duplicidade...` |
-| `cliente_id` | ⬜ | `ACME-104` |
-
----
-
-## 📁 Estrutura de pastas
+## 🗺 Roadmap Resumido
 
 ```
-ainsightcx-mvp/
-├── app/
-│   ├── page.tsx                    # Landing page
-│   ├── layout.tsx                  # Layout raiz, fonte e provider de tema
-│   ├── globals.css                 # Tema da marca (light/dark) em CSS variables
-│   ├── upload/                     # Envio e validação do CSV
-│   ├── dashboard/                  # Insights, filtros e planos de ação
-│   ├── sobre/                      # Contexto acadêmico e LGPD
-│   └── api/
-│       ├── analyze/route.ts        # Classificação + sumarização em lote
-│       └── action-plan/route.ts    # Geração do plano de ação por tema
-├── components/
-│   ├── ui/                         # Componentes shadcn/ui
-│   ├── csv-uploader.tsx            # Drag-and-drop e dataset de exemplo
-│   ├── theme-card.tsx              # Card de tema com plano de ação
-│   ├── kpi-card.tsx                # Cartões de indicadores
-│   ├── urgency-badge.tsx           # Selo de urgência
-│   ├── header.tsx · footer.tsx     # Layout compartilhado
-│   └── theme-toggle.tsx            # Alternância de dark mode
-├── lib/
-│   ├── groq.ts                     # Client server-only da Groq
-│   ├── prompts.ts                  # Prompts centralizados
-│   ├── csv-parser.ts               # Wrapper do papaparse e validações
-│   ├── sample-data.ts              # 30 interações fictícias de demonstração
-│   ├── session.ts                  # Estado da análise em sessionStorage
-│   └── types.ts                    # Tipos compartilhados
-└── .env.example                    # Template das variáveis de ambiente
+FASE 1 — MVP (Meses 1-2)          FASE 2 — ESCALA (Meses 3-5)      FASE 3 — DIFERENCIAÇÃO (Meses 6-9)
+├─ Ingestão CSV                   ├─ Integrações nativas            ├─ Fine-tuning por cliente
+├─ Classificação por IA           ├─ Migração p/ Claude/GPT-4o      ├─ RAG com base do cliente
+├─ Sumarização executiva          ├─ Plano de ação automatizado     ├─ Análise de sentimento
+├─ Dashboard básico               ├─ Alertas Slack/e-mail           ├─ Multi-idioma (EN/ES)
+└─ 3+ clientes beta               └─ 15+ clientes pagantes          └─ 50+ clientes, 3+ enterprise
+   MRR: R$ 0 (beta)                  MRR: R$ 30.000                    MRR: R$ 150.000
 ```
 
----
+## ⚠ Principais Riscos
 
-## 🧠 Como a IA é usada
+| #      | Risco                               | Exposição           | Mitigação                                          |
+| ------ | ----------------------------------- | ------------------- | -------------------------------------------------- |
+| **R1** | Alucinações da IA                   | 🔴 **20 — Crítico** | Validação humana + disclaimers + logs de auditoria |
+| **R3** | Escalada de custos de API           | 🟠 **16 — Alto**    | Tier gratuito no MVP + cache + limites por plano   |
+| **R5** | Concorrência de grandes plataformas | 🟠 **15 — Alto**    | Foco em nicho + diferenciação clara                |
 
-Duas chamadas, ambas com `temperature: 0.3` e resposta em JSON estruturado:
+> A matriz completa com os 8 riscos está no [Kit de Artefatos Práticos](./Kit_Artefatos_Praticos_AinsightCX.pdf), seção 5.
 
-**`POST /api/analyze`** — recebe até 30 mensagens e faz **classificação + sumarização em um único prompt** (mais rápido e mais barato que uma chamada por mensagem). Retorna temas com urgência, volume, resumo executivo, principais queixas e os ids das mensagens de cada grupo.
+## 🛠 Ferramentas Utilizadas
 
-**`POST /api/action-plan`** — recebe um tema com suas mensagens e retorna de 3 a 5 ações priorizadas por impacto, cada uma com título, descrição, prazo (imediato/semana/mês) e área responsável.
+| Ferramenta               | Função                                          |
+| ------------------------ | ----------------------------------------------- |
+| **Miro**                 | Lean Canvas + Roadmap Visual + Matriz de Riscos |
+| **Notion**               | Documento de MVP detalhado                      |
+| **Microsoft Word / PDF** | Parte Teórica e Kit Consolidado                 |
+| **YouTube**              | Hospedagem do vídeo pitch (não listado)         |
+| **GitHub**               | Versionamento e documentação central            |
 
-**Decisões de robustez:**
+## 📂 Estrutura do Repositório
 
-- 🔒 A `GROQ_API_KEY` só existe no servidor — o módulo do client é marcado com `server-only`.
-- 🧯 Parse defensivo: aceita JSON puro, cercado por \`\`\`json ou com texto ao redor.
-- ✅ Normalização da resposta: urgências e prazos fora do enum são corrigidos; ids inventados pela IA são descartados; mensagens que a IA esqueceu de agrupar viram um tema residual, para nada sumir do relatório.
-- ⏱️ Rate limit próprio de 1 chamada a cada 3 segundos, com fila serial e timeout de 60s.
-- 💬 Todo erro da Groq (401, 429, 5xx, timeout) vira uma mensagem em português explicando o que fazer.
-
----
-
-## ☁️ Deploy na Vercel
-
-```bash
-npm i -g vercel
-vercel --prod
+```
+ainsightcx/
+├── README.md                                # Este arquivo
+├── Parte_Teorica_AinsightCX.pdf             # Parte teórica (19 páginas)
+├── Kit_Artefatos_Praticos_AinsightCX.pdf    # 4 artefatos consolidados
+├── canvas.png                               # Print do Lean Canvas no Miro
+├── roadmap.png                              # Print do Roadmap no Miro
+├── matriz-riscos.png                        # Print da Matriz de Riscos no Miro
+├── mvp-doc.png                              # Print do MVP Doc no Notion
+└── thumb-video.jpg                          # Thumbnail do vídeo pitch
 ```
 
-Ou conecte o repositório em [vercel.com/new](https://vercel.com/new). Em **Settings → Environment Variables**, adicione:
+## 🎬 Vídeo Pitch
 
-| Nome | Valor |
-|---|---|
-| `GROQ_API_KEY` | sua chave da Groq |
+🔗 [Assistir no YouTube](https://youtu.be/[PLACEHOLDER_ID_VIDEO])
 
-🔗 **MVP no ar:** https://ainsightcx-mvp.vercel.app
+**Duração:** até 4 minutos
+**Conteúdo:** contexto do problema, visão do produto, MVP proposto, roadmap, principais riscos e justificativa estratégica.
 
----
+## 📄 Documentação Teórica
 
-## 🔗 Artefatos do projeto
+A análise teórica completa do projeto (visão de produto, MVP, roadmap, ciclo de vida, riscos e gestão específica de IA) está disponível abaixo:
 
-| Artefato | Link |
-|---|---|
-| 📄 Documento de MVP | [Notion](https://ainsightcx.notion.site/AInsightCX-Documento-de-MVP-3ad5551d52218044a6aff971395115af) |
-| 🎨 Lean Canvas, roadmap e matriz de riscos | [Miro](https://miro.com/app/board/uXjVH2CNn1E=/?share_link_id=226858806009) |
-| 📚 Parte teórica (PDF) | _[adicionar link]_ |
-| 📹 Vídeo pitch | _[adicionar link]_ |
-| 💻 Código-fonte | [GitHub](https://github.com/guipardindev/ainsightcx-mvp) |
+🔗 [Parte Teórica — AinsightCX (PDF, 19 páginas)](./Parte_Teorica_AinsightCX.pdf)
 
----
+## 🔐 Considerações Éticas e LGPD
 
-## ⚖️ Considerações éticas e LGPD
+O planejamento do AinsightCX incorpora desde o desenho:
 
-- **Nada é armazenado.** Não há banco de dados nem autenticação. O CSV é processado em memória e o resultado vive apenas no `sessionStorage` do seu navegador, sumindo quando a aba fecha.
-- **Os dados trafegam para a Groq.** O conteúdo das mensagens é enviado à API da Groq para processamento. Por isso, **anonimize antes de subir qualquer base real**: remova nomes, e-mails, telefones e documentos.
-- **Minimização de dados.** O MVP só pede o essencial — data, canal e mensagem. O `cliente_id` é opcional e deve ser um identificador pseudonimizado, nunca um dado pessoal direto.
-- **IA não decide sozinha.** Os resultados são sugestões e podem conter imprecisões. O dashboard exibe esse aviso, e o desenho do produto mantém o humano no comando da decisão.
-- **Transparência.** As mensagens originais de cada tema ficam sempre a um clique de distância, para que qualquer conclusão da IA possa ser auditada na fonte.
+- **LGPD** — anonimização automática de dados sensíveis, DPO designado, contratos de operador de dados
+- **Human-in-the-loop** — a IA sugere; o humano decide. Nenhuma ação crítica é tomada sem validação
+- **IA explicável** — cada saída da IA vem acompanhada das mensagens que a fundamentaram
+- **Transparência** — usuário sabe sempre quando está consumindo conteúdo gerado por IA
+- **Zero Data Retention** — dados de clientes não são usados para treinar modelos externos
 
----
+## ⚠ Considerações
 
-## 🗺️ Roadmap
+- Este projeto é um **planejamento estratégico acadêmico**, não uma implementação em código
+- Todos os valores financeiros (MRR, custos, preços) são projeções baseadas em benchmarks de mercado SaaS B2B brasileiro
+- O produto pode ser evoluído para MVP funcional em desenvolvimento posterior
+- Segue os frameworks do **PMI (PMBOK 7ª ed.)** e **Scrum Guide (2020)**
 
-| Fase | Foco | Entregas |
-|---|---|---|
-| **1 · MVP** | Validar a hipótese central | Upload de CSV, classificação temática, resumo executivo e plano de ação (F1–F5) |
-| **2 · Escala** | Tirar o processo do manual | Integrações via API com Zendesk/Intercom, histórico e comparação entre períodos, múltiplos usuários |
-| **3 · Diferenciação** | Sair do reativo | Alertas proativos de tendência, previsão de risco de churn por tema e conexão direta com o roadmap de produto |
-
----
-
-## 👤 Autor
+## 👨‍🎓 Autor
 
 **Guilherme Pardin de Almeida**
-Estudante da UniFECAF · Desenvolvedor
+Disciplina: Fundamentos de Gestão de Projetos
+UniFECAF — 2026
 
-[![GitHub](https://img.shields.io/badge/GitHub-@guipardindev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guipardindev)
-
----
-
-<div align="center">
-
-**MVP acadêmico · UniFECAF · Fundamentos de Gestão de Projetos**
-
-Sem fins comerciais.
-
-</div>
+[![GitHub](https://img.shields.io/badge/GitHub-guipardindev-181717?style=flat&logo=github)](https://github.com/guipardindev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-eusouguipardin-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/eusouguipardin)
+[![YouTube](https://img.shields.io/badge/YouTube-guipardindev-FF0000?style=flat&logo=youtube)](https://youtube.com/@guipardindev)
+# ainsightcx-mvp
+# ainsightcx-mvp
